@@ -1,0 +1,188 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 10px;
+}
+
+.home__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.home__top h1:first-child {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.home__top h1:last-child {
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    padding: 5px 10px;
+    color: white;   
+    border-radius: 5px;
+}
+
+.home__body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 260px;
+    height: 140px;
+    color: white;
+    padding: 10px 10px 0 10px;
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.card.account {
+    background-color: #00c0ef;
+}
+
+.card.faculty {
+    background-color: #00a65a;
+}
+
+.card.class {
+    background-color: #f39c12;
+}
+
+.card.student {
+    background-color: #dd4b39;
+}
+
+.card__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__content i {
+    font-size: 80px;
+    color: rgba(165, 129, 129, 0.5);
+}
+
+.card__content__type {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__content__type span:first-child {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card__content__type span:last-child {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.card__more {
+    background-color: rgba(0,0,0,0.1);
+    height: 28px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card__more i {
+    margin-left: 5px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 2px;
+    color: rgba(165, 129, 129, 0.8);
+    font-size: 12px;
+    transition: all 0.5s ease;
+}
+
+.card__more span {
+    transition: all 0.5s ease;
+}
+
+.card__more:hover span {
+    transform: scale(1.2);
+}
+
+.card__more:hover i {
+    transform: translateX(200px);
+}
+
+.home__bottom {
+    flex: 1;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Chart */
+
+.home__bottom__chart {
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    width: 50%;
+}
+
+.home__bottom__chart h2 {
+    font-weight: 400;
+    font-size: 24px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.chart-container {
+    width: 100%;
+    height: 300px;
+}   
+
+.home__bottom__map {
+    background-color: white;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    width: 50%;
+}
+
+.home__bottom__map h2 {
+    font-weight: 400;
+    font-size: 24px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.map-container {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}

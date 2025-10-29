@@ -1,0 +1,43 @@
+{
+  "name": "quanlysinhvien",
+  "version": "1.0.0",
+  "description": "Quan Ly Sinh Vien + Diem Danh - (Phat Trien Phan Mem - Thay Tung)",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyenhoangkha1910/QuanLySinhVien-DiemDanh.git"
+  },
+  "keywords": [
+    "quanlysinhvien",
+    "diemdanh",
+    "nhandienkhuonmat"
+  ],
+  "author": "Nhom 19",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nguyenhoangkha1910/QuanLySinhVien-DiemDanh/issues"
+  },
+  "homepage": "https://github.com/nguyenhoangkha1910/QuanLySinhVien-DiemDanh#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "canvas": "^3.1.0",
+    "cors": "^2.8.5",
+    "date-fns": "^4.1.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "face-api.js": "^0.22.2",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.12.0",
+    "qrcode": "^1.5.4",
+    "svg-captcha": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

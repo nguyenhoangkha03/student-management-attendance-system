@@ -1,0 +1,23 @@
+.show-result {
+    background-color: red;
+    position: absolute;
+    padding: 10px 20px;
+    top: 10%;
+    right: 0;
+    transform: translateX(100%);
+}
+
+.show-result.show {
+    transform: translateX(0);
+    transition: all 0.5s;
+}
+
+.success {
+    background-color: rgb(6, 179, 6);
+    color: white;
+}
+
+.error {
+    background-color: rgb(179, 6, 6);
+    color: white;
+}

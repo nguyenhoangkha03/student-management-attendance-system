@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", serif;
+}
+
+.login {
+    height: 100vh;
+    background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__form {
+    background: white;
+    height: 85%;
+    padding: 0 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.login__form img {
+    width: 350px;
+}
+
+.login__form__content {
+    text-align: center;
+}
+
+.login__form__content h1 {
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.container-login-input {
+    display: flex;
+    background-color: #e6e6e6;
+    height: 50px;
+    padding: 0 30px;
+    border-radius: 40px;
+    align-items: center;
+    color: #666666;
+    cursor: text;
+    margin-bottom: 20px;
+}
+
+.container-login-input input {
+    height: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    margin-left: 20px;
+    width: 200px;
+    pointer-events: none;
+    color: #666666;
+}
+
+.container-login-input i {
+    font-size: 15px;
+    pointer-events: none;
+}
+
+.container-login-input i.active {
+    color: #00d9ff;
+}
+
+.container-login-input.active {
+    animation: glow 0.5s ease-out forwards;
+}
+
+.login__form__content button {
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 50px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-color: #00d9ff;
+    font-weight: 500;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #00d9ff;
+    }
+    50% {
+        box-shadow: 0 0 25px #00d9ff, 0 0 30px rgba(0, 217, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 rgba(0, 217, 255, 0);
+    }
+}

@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.view-data {
+    background-color: #f5f7fd;
+    border-radius: 5px;
+    height: 100%;
+    font-family: "Public Sans", serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.view__title {
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.view__title h2 {
+    font-weight: 500;
+}
+
+.view__title button {
+    border: none;
+    outline: none;
+    border: 2px solid #1572e8;
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    color: #1572e8;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.view__title button:hover {
+    color: white;
+    background-color: #1572e8;
+}
+
+.view__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgb(92, 92, 92);
+    height: 10%;
+}
+
+.view__top__entries {
+    margin-left: 20px;
+}
+
+.view__top__search {
+    margin-right: 25px;
+}
+
+.view__top__entries select, 
+.view__top__type select {
+    margin: 0 5px;
+    padding: 4px;
+    color: 12px;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(136, 136, 136, 0.2);
+    border-radius: 4px;
+    appearance: none;
+}
+
+.view__top__entries select {
+    width: 70px;
+}
+
+.view__top__type select {
+    width: 100px;
+}
+
+.view__top__entries select:focus {
+    border: 2px solid rgb(0, 102, 255);
+}
+
+.view__top__search input {
+    margin-left: 10px;
+    width: 170px;
+    padding: 4px;
+    color: 12px;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(136, 136, 136, 0.2);
+    border-radius: 4px;
+    appearance: none;
+}
+
+.view__top__search input:focus {
+    border: 2px solid rgb(0, 102, 255);
+    color: rgb(82, 82, 82);
+}
+
+.view__body {
+    overflow: auto;
+    height: 70%;
+    padding: 0 20px;
+}
+
+.view__body table {
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 20px;
+    text-align: left;
+    font-family: "Public Sans", serif;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: 600;
+    cursor: pointer; 
+    position: relative;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+tr:hover {
+    background-color: #ececec;
+}
+
+.view__body tr td i:first-child {
+    color: red;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.view__body tr td i:last-child {
+    color: rgb(10, 105, 207);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.view__body tr td img {
+    height: 80px;
+    object-fit: cover;
+    width: 60px;
+}
+
+.view__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    padding: 0 20px;
+}
+
+.view__bottom__total {
+    padding-top: 4px;
+}
+
+.view__bottom__pagination button {
+    border: none;
+    padding: 8px 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgb(116, 116, 116);
+    margin-left: 2px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.3s;
+}
+
+.view__bottom__pagination button:hover {
+    border: 1px solid rgb(0, 89, 255)
+}

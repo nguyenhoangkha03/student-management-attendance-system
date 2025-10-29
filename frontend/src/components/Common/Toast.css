@@ -1,0 +1,102 @@
+:root {
+    --success: rgb(0, 197, 0);
+    --error: rgb(238, 8, 8);
+
+    --success-bold: rgba(0, 102, 0, 0.4);
+    --error-bold: rgba(203, 9, 9, 0.4);
+}
+
+.toast {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 20px;
+    overflow: hidden;
+    animation: slide_show 2s ease forwards;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+}
+
+.toast.hide-toast {
+    animation: slide_hide 2s ease forwards;
+}
+
+.toast i {
+    margin: 10px;
+}
+
+.toast .countdown {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    animation: countdown 3s ease forwards;
+}
+
+.toast.success {
+    background: var(--success);
+    border-left: 6px solid var(--success-bold);
+}
+
+.toast.success .countdown {
+    background: var(--success-bold);
+}
+
+.toast.error {
+    background: var(--error-bold);
+    border-left: 6px solid var(--error);
+}
+
+.toast.error .countdown {
+    background: var(--error);
+}
+
+@keyframes countdown {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+@keyframes slide_show {
+    0% {
+        transform: translate(100%);
+    }
+    25% {
+        transform: translate(-10%);
+    }
+    50% {
+        transform: translate(0%);
+    }
+    /* 75% {
+        transform: translate(-10%);
+    } */
+    100% {
+        transform: translate(-10px);
+    }
+}
+
+@keyframes slide_hide {
+    0% {
+        transform: translate(-10%);
+    }
+    25% {
+        transform: translate(0%);
+    }
+    50% {
+        transform: translate(-10%);
+    }
+    /* 75% {
+        transform: translate(-10%);
+    } */
+    100% {
+        transform: translate(150%);
+    }
+}

@@ -1,0 +1,133 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    border-radius: 10px 10px 0 0;
+}
+
+.section-header {
+    width: 300px;
+}
+
+.header-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 12px 20px;
+    height: 50px;
+    transition: all 0.3s;
+}
+
+.header-search i {
+    font-size: 18px;
+    cursor: pointer;
+    color: rgb(90, 90, 90);
+}
+
+.header-search input.hideInput {
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+}
+
+.header-search input {
+    font-size: 18px;
+    width: 200px;
+    border: none;
+    outline: none;
+    color: gray;
+    transition: width 0.4s, opacity 0.4s, visibility 0.4s;
+}
+
+.header-search .close.hide {
+    width: 0;
+}
+
+.search-zoom-out {
+    width: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(120%);
+}
+
+.header h1 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.header h1 {
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    padding: 5px 10px;
+    color: white;   
+    border-radius: 5px;
+}
+
+.header-tools {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.header-tools div {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.header-tools div span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    z-index: 1;
+}
+
+.header-tools div:hover i  {
+    transform: scale(1.2);
+}
+
+.header-tools div:hover img  {
+    transform: scale(1.2);
+}
+
+.header-tools div i {
+    font-size: 25px;
+    transition: transform 0.3s ease;
+    color: rgb(4, 50, 52);
+}
+
+.header-tools div img {
+    width: 30px;
+    transition: transform 0.3s ease;
+    color: rgb(4, 50, 52);
+}
+
+.theme i.light {
+    color: yellow;
+}

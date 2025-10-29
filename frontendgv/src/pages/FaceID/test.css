@@ -1,0 +1,212 @@
+table thead th {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgb(0, 0, 0); /* Chữ màu đen để dễ đọc */
+  padding: 10px;
+  text-align: center;
+}
+.webcam-flip {
+    transform: scaleX(-1); /* Lật ảnh lại theo chiều ngang */
+  }
+.webcam-container {
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: url('sea.gif') no-repeat center center fixed;
+  background-size: cover;
+}
+.webcam-fullscreen {
+  position: absolute;
+  margin: 10%;
+  margin-left: 10%;
+  margin-right: 30%;
+  /* width: 60%;
+  height: 60%; */
+  object-fit: cover; /* Phủ kín mà không bị méo */
+}
+.Bottom {
+  position: absolute;
+  bottom: 10px; /* Đưa xuống dưới */
+  z-index: 2;
+  left: 52%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(245, 238, 250);
+  text-align: center;
+  white-space: nowrap;
+}
+.Top{
+  position: absolute;
+  top: 0;
+  left: 42%;
+  transform: translateX(-50%);
+  z-index: 3; /* Đảm bảo cao hơn .DD */
+  color: rgb(246, 216, 236); /* Màu sắc tùy chỉnh */
+  font-size: 24px;
+  font-weight: bold;
+}
+.right {
+  position: fixed;
+  top: 0;
+  right: 0;  /* Cố định phần tử ở bên phải */
+  width: 30%; /* Điều chỉnh chiều rộng phần .right */
+  height: 100vh;
+  /* background-color: white; */
+  z-index: 2;
+  font-size: 14px;
+  overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.rightt { 
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50vw;
+  height: 103vh;
+  /* background-color: rgb(217, 217, 252); */
+  background-color: white;
+  z-index: 2;
+}
+.left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50vw;
+  height: 103vh;
+  /* background-color: rgb(217, 217, 252); */
+  background-color: white;
+  z-index: 1;
+}
+.leftt {
+  /* test.js */
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50vw;
+  height: 103vh;
+  /* background-color: rgb(217, 217, 252); */
+  background-color: white;
+  z-index: 1;
+}
+.text{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: b
+  black;
+}
+.textt{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  margin-bottom: 10px;
+}
+.TTop{
+  /* test.js */
+  width: 1000px;
+  height: 100%;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgb(26, 40, 62);
+  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+#cursor {
+  z-index: 2;
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  border-top: 5px solid #0f0;
+  border-left: 5px solid #0f0;
+  transform-origin: top;
+  transform: translate(-50%, -50%) rotate(15deg); /* Căn giữa */
+  transition: transform 0.1s ease-out; /* Thêm hiệu ứng mượt mà */
+  pointer-events: none;
+  filter: drop-shadow(0 0 5px #0f0)
+          drop-shadow(0 0 15px #0f0)
+          drop-shadow(0 0 35px #0f0)
+          hue-rotate(60deg);
+}
+#cursor::before{
+  z-index: 3;
+  content: '';
+  position: absolute;
+  left: -2.5px;
+  width: 5px;
+  height: 40px;
+  background: #0f0;
+  transform-origin: top;
+  transform: rotate(315deg);
+
+}
+body:hover #cursor {
+  z-index: 3;
+  transform: translate(-1px,5px) rotate(15deg) scale(1);
+}
+.element{
+  z-index: 3;
+  position: absolute;
+  background: #0f0;
+  pointer-events: none;
+  width: 10px;
+  height: 10px;
+  transition: 1s;
+  filter: drop-shadow(0 0 5px #0f0)
+          drop-shadow(0 0 25px #0f0)
+          hue-rotate(60deg);
+}
+
+.button-export {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  width: 30%;
+  z-index: 5; /* Đảm bảo nút nằm trên cùng */
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.button-export:hover {
+  background-color: #45a049;
+}
+.button-exportt{
+  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+  position: absolute;
+  width: 10%;
+  top: 0;
+  left: 0;
+  z-index: 5; /* Đảm bảo nút nằm trên cùng */
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}

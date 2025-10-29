@@ -1,0 +1,77 @@
+.view__top__add {
+    display: flex;
+    padding: 15px 20px;
+    border-top: 1px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.view__add__left, 
+.view__add__right {
+    flex: 1;
+    color: #495057;
+    font-size: 14px;
+}
+
+.view__add__left div,
+.view__add__right div {
+    margin-bottom: 20px;
+}
+
+.view__add__left div h3,
+.view__add__right div h3 {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.view__add__left div input, 
+.view__add__right div input, 
+.view__add__left div select, 
+.view__add__right div select {
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 10px;
+    width: 500px;
+    appearance: none;
+    transition: all 0.3s;
+}
+
+.view__add__left div input:focus, 
+.view__add__right div input:focus, 
+.view__add__left div select:focus, 
+.view__add__right div select:focus {
+    border: 2px solid rgb(0, 145, 255);
+}
+
+.view__bottom__add {
+    padding: 0 20px;
+}
+
+.view__bottom__add button {
+    border: none;
+    outline: none;
+    border: 2px solid #1572e8;
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    color: #1572e8;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-right: 10px;
+}
+
+.view__bottom__add button:hover {
+    color: white;
+    background-color: #1572e8;
+}
+
+.view__add__left div img, 
+.view__add__right div img {
+    height: 80px;
+    width: 70px;
+    object-fit: cover;
+    margin-top: 10px;
+}

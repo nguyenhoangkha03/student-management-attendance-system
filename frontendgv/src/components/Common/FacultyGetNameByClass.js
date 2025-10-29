@@ -1,0 +1,31 @@
+import { useState, useEffect } from "react"
+import { getClassById } from "../../services/classService"
+import { getFacultyById } from '../../services/facultyService'
+
+function Cell({ Id }) {
+  const [name, setName] = useState("Loading...")
+
+  useEffect(() => {
+    async function fetch() {
+      try {
+        const objectClass = await getClassById(Id)
+        async function fetchFaculty() {
+            try {
+              const object = await getFacultyById(objectClass.id_khoa)
+              setName(object.ten_khoa)
+            } catch (error) {
+              setName("Error loading")
+            }
+        }
+        fetchFaculty()
+      } catch (error) {
+        setName("Error loading")
+      }
+    }
+    fetch()
+  }, [Id]) 
+
+  return <span>{name}</span>
+}
+
+export default Cell

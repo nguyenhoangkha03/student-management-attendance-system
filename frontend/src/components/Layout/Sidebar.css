@@ -1,0 +1,237 @@
+.sidebar {
+    width: 300px;
+    height: 100%;
+    background-color: rgb(26, 32, 53);
+    color: rgb(234, 234, 234);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+.sidebar-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    border-bottom: 1px solid rgba(247, 247, 247, 0.2);
+    height: 180px;
+    transition: all 0.5s ease;
+}
+
+.sidebar-top span:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-top span:first-child h1 {
+    font-weight: 600;
+    transition: all 0.5s ease;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 35px;
+}
+
+.sidebar-top span:last-child {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.sidebar-top span:last-child i {
+    pointer-events: none;
+}
+
+.sidebar-top img {
+    width: 100px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+.sidebar-top i {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.sidebar-body {
+    flex: 1;
+    padding: 10px 10px;
+    overflow-y: auto;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-item:hover {
+    background-color: white;
+    color: rgb(90, 90, 90);
+}
+
+.menu-item span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 3;
+}
+
+.menu-item span i {
+    width: 30%;
+}
+
+.menu-item span h2 {
+    font-size: 20px;
+    font-weight: 500;
+    width: 70%;
+}
+
+.menu-item > i {
+    flex: 1;
+    text-align: end;
+}
+
+.menu-item i {
+    font-size: 22px;
+}
+
+.menu-item.active {
+    background-color: white;
+    color: rgb(90, 90, 90);
+}
+
+.sidebar-bottom {
+    border-top: 1px solid rgba(247, 247, 247, 0.2);
+    display: flex;
+    height: 100px;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar-bottom > a {
+    flex: 1;
+}
+
+.sidebar-bottom > a > span:first-child {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    flex: 1;
+    height: 70%;
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.sidebar-bottom > a > span:first-child.active {
+    background-color: white;
+    color: black;
+}
+
+.sidebar-bottom > a > span:first-child:hover {
+    background-color: white;
+    color: black;
+}
+
+.sidebar-bottom img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.sidebar-bottom > a > span .info {
+    margin-left: 10px;
+}
+
+.sidebar-bottom > a > span .info span {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.sidebar-bottom > span:nth-child(2) {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.sidebar-bottom > span:nth-child(2) i {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+/* Zoom */
+.sidebar.zoom {
+    width: 100px;
+}
+
+.sidebar-top.zoom {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.to-fly-hide {
+    transform: translate(200px, -200px);
+    opacity: 0;
+    position: absolute;
+}
+
+.hide {
+    display: none !important;
+}
+
+.sidebar-bottom.zoom {
+    justify-content: center;
+}

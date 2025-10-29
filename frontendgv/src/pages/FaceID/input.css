@@ -1,0 +1,81 @@
+.container-wrapper {
+    background-image: url("schooll.jpg");
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Chiều cao toàn màn hình */
+    width: 100%;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 80px; */
+    border-radius: 8px;
+    /* background-color: yellow;    */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 38%;
+    margin-right: 38%;
+    gap: 20px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input {
+    width: 60%;
+    margin: 10px 0;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* button:hover {
+    background-color: #0056b3;
+} */
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    color: red;
+    font-size: 14px;
+}
+.btnDk{
+    width: 90px;
+    background-color: #007bff;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.icon {
+    width: 100px;  /* Thu nhỏ icon */
+    height: auto;  
+    display: block; 
+    margin: -10px auto; /* Căn giữa và đẩy lên trên */
+}
